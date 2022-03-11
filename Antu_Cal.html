@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="calculater.css">
+    </head>
+    <script>
+
+       class abc{
+        
+         num=0;        
+
+        constructor(num)
+           {
+               this.num = num
+            console.log(`Default Const of abc....`);
+           
+            }
+            get(){
+                return this.num;
+            }
+       }
+       class pqr extends abc{
+        constructor()
+           {
+            super(10);
+
+               console.log(`Default Const of pqr....`);
+               console.log(` Value Of a ${super.get()}....`);
+            
+            }
+       }
+
+       let a=new pqr();
+
+</script>
+    <body>
+        <p>This is Antim calculater....</p>
+        <div>
+        
+        <form name="call">
+            <input type="text" id="in" name="ans" value="">
+        
+            <br>
+            <h2 id="inner">
+
+                <input type="button" value="1" onclick="document.call.ans.value+='1'">
+                <input type="button" value="2" onclick="document.call.ans.value+='2'">
+                <input type="button" value="3" onclick="document.call.ans.value+='3'">
+                <input type="button" value="+" onclick="document.call.ans.value+='+'">
+                <br>
+           
+                <input type="button" value="4" onclick="document.call.ans.value+='4'">
+                <input type="button" value="5" onclick="document.call.ans.value+='5'">
+                <input type="button" value="6" onclick="document.call.ans.value+='6'">
+                <input type="button" value="-" onclick="document.call.ans.value+='-'">
+                <br>
+
+                <input type="button" value="7" onclick="document.call.ans.value+='7'">
+                <input type="button" value="8" onclick="document.call.ans.value+='8'">
+                <input type="button" value="9" onclick="document.call.ans.value+='9'">
+                <input type="button" value="/" onclick="document.call.ans.value+='/'">
+                <br>
+
+                <input type="button" value="0" onclick="document.call.ans.value+='0'">
+                <input type="button" value="C" onclick="document.call.ans.value=''">
+                <input type="button" value="*" onclick="document.call.ans.value+='*'">
+                <input type="button" value="=" onclick="document.call.ans.value=eval(document.call.ans.value)">
+                
+           
+            </h2>
+
+        </form>
+    </div>
+    </body>
+</html>

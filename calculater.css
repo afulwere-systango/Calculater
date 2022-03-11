@@ -1,0 +1,20 @@
+div{
+    background-color: burlywood;
+    /* display:inline; */
+    margin: auto;
+    padding: 10px 25px;
+    width: 25%;
+}
+div input{
+    margin-bottom: 10px;
+    background-color: lavender;
+    margin-left: 30px;
+    font-size: 1.5em;
+    border-radius: 5px;
+    width: 40px;
+}
+#in{
+    width: auto;
+    margin-left: 5px;
+    border-radius: 50px;
+}
